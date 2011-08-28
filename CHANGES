@@ -1,0 +1,10 @@
+baidu-hi-mover changlog
+
+源代码: https://github.com/icycandy/baidu-hi-mover
+Web版: http://baidu-hi-mover.appspot.com/
+作者网站: http://www.icycandy.com
+
+======================= 2011/08/28 =======================
+* 本地版本能完成从百度Hi到WordPress搬家的功能
+
+* Web版只支持日志量少的博客，如果博客的日志量稍大，则程序会崩溃

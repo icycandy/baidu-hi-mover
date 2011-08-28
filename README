@@ -1,0 +1,26 @@
+==简介==
+baidu-hi-mover是一款将百度Hi博客搬家到WordPress的开源小工具，算是我学习Python的一个小成果吧。很久之前我由于自己的需要写过一个JAVA版本，现在借学习Python的机会进行了重写，遵循GPLv2协议。
+
+搬家范围仅限于日志的标题、时间、分类和正文，图片为链接形式，不支持日志评论和留言板。
+
+源代码: https://github.com/icycandy/baidu-hi-mover
+Web版: http://baidu-hi-mover.appspot.com/
+作者网站: http://www.icycandy.com
+
+==运行方法==
+1. 本地版
+python Hi2Wp.py blog_id
+
+2. Web版
+访问 http://baidu-hi-mover.appspot.com/ ，填写blog_id，点击“开始搬家”。
+
+其中blog_id是指你百度Hi博客的名字，比如我的百度Hi主页为 http://hi.baidu.com/icycandy ，那么blog_id就是icycandy。
+
+经过上述操作以后，会得到一个xml文件。然后进入WordPress后台，依次选择 Tools -> Import -> WordPress，上传该xml文件即可完成导入。
+
+==TODO==
+1. 改进Web版的功能，现在的版本只能处理小日志量的博客，当日志很多的时候，程序会崩溃
+2. 美化Web界面，现在的界面好丑啊
+3. 增加发送邮件功能，当搬家完成后，将xml文件发送到用户指定的邮箱
+4. 改进生成的xml文件的缩进，使看起来更加美观
+5. 增加当blog_id不存在时的判断，可能原因有博客不存在、设置了访问权限、网络不通畅等
